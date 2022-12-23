@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./assets/logo_icon.png" />
+        <script src="./index.js"></script>
+        <title>Xenon Webpage</title>
+    </head>
+    <body onload="myFunction()" class="bodyP2_4">
+        <!--    Bagian Loader   -->
+        <div id="loader"></div>
+        <div style="display:none;" id="displayloading" class="animasi_intro">
+        <!--    Bagian Navigasi   -->
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="./aboutpage.html">About Me</a>
+                <a href="#"  class="active">Future Plan</a>
+                <a href="./songrecommendation.html">Song Recommendations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        <!--    Bagian Konten   -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <p id="futuretitle"></p>
+            </div>
+          </div>
+            <h1 id="judulP3">My Future Plan</h1>
+            <p id="descriptionP3">Proyeksi diri saya dalam 7 tahun ke depan dan bagaimana usaha saya merealisasikannya. Saya memproyeksikan diri saya di 7 tahun mendatang sudah bekerja sebagai seorang <em>information professional</em> di sebuah perusahaan ternama.</p>
+            <div class="page3">
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn"
+                        onclick='document.getElementById("futuretitle").innerHTML = "Pada tahun pertama pencapaian saya adalah dengan diterima masuk Universitas Indonesia. Di tahun ini saya berencana untuk mengikuti banyak kegiatan mahasiswa seperti kepanitiaan dan fokus dengan perkuliahan sehingga saya mendapatkan nilai dan hasil yang baik. Selain itu, saya juga ingin fokus mengembangkan passsion saya di bidang graphic design dan melanjutkan jasa terkait graphic design yang sudah saya lakukan dari SMA sehingga passion saya tersebut dapat menghasilkan."'>
+                        <span onclick="openNav()">1st Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn"
+                        onclick='document.getElementById("futuretitle").innerHTML = "Lanjut pada tahun kedua, saya berencana untuk memperbanyak pengalaman dengan cara tidak hanya menjadi staf dalam kepanitiaan, tetapi mengambil peran yang lebih besar seperti penanggung jawab baik dalam sebuah kepanitaan maupun acara. Di tahun ini saya juga berusaha untuk tetap fokus dengan kuliah saya dan riset mengenai pekerjaan profesional informasi untuk perencanaan di masa mendatang. Saya juga berencana mulai mengikuti magang untuk menambah pengalaman kerja saya di luar universitas."'>
+                        <span onclick="openNav()">2nd Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn"
+                        onclick='document.getElementById("futuretitle").innerHTML = "Di tahun ketiga, saya berencana untuk mengikuti program Magang dan Studi Independen Bersertifikat atau MSIB untuk meningkatkan kemampuan saya baik hard skill ataupun soft skill dan fokus melanjutkan studi perkuliahan saya sehingga mendapat nilai yang memuaskan."'>
+                        <span onclick="openNav()">3rd Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn" 
+                        onclick='document.getElementById("futuretitle").innerHTML = "Pada tahun ke-4, saya berencana untuk lulus dalam studi sarjana saya di Universitas Indonesia dengan status cumlaude dan dalam kurun waktu 3,5 tahun, serta mendapat IPK yang memuaskan berkat hasil usaha keras saya dalam belajar di tahun-tahun sebelumnya."'>
+                        <span onclick="openNav()">4th Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn"
+                        onclick='document.getElementById("futuretitle").innerHTML = "Di tahun ke-5 saya berencana untuk bekerja untuk menambah pengalaman saya sebagai seorang fresh graduate dengan bekerja di perusahaan untuk jangka pendek. Di samping bekerja, saya juga merencanakan terkait studi jenjang magister pada tahun-tahun mendatang."'>
+                        <span onclick="openNav()">5th Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn" 
+                        onclick='document.getElementById("futuretitle").innerHTML = "Pada tahun ke-6, saya berencana untuk mengevaluasi kinerja dan kemampuan saya selama saya berada di perusahaan saat ini yang kemudian hasil dari evaluasi tersebut saya pergunakan untuk mendapatkan posisi pekerjaan yang lebih baik pada perusahaan yang lebih baik pula untuk kepentingan jangka panjang."'>
+                        <span onclick="openNav()">6th Year</span>
+                    </button>
+                </div>
+                <div class="ftrbtnmargin">
+                    <button class="futurebtn" 
+                        onclick='document.getElementById("futuretitle").innerHTML = "Dan terakhir pada tahun ketujuh saya memproyeksikan diri saya sudah mulai mendapatkan pekerjaan yang tetap dan nyaman sebagai profesional informasi untuk jangka panjang dengan memanfaatkan pengalaman-pengalaman kerja di tahun-tahun sebelumnya setelah saya menyelesaikan studi sarjana. Untuk mencapai hal tersebut tentunya tidak lepas dengan meningkatkan keahlian dan kemampuan saya baik dengan terus mengasah kemampuan yang ada atau dengan mempelajari keahlian pemanfaatan teknologi baru yang belum saya kuasai."'>
+                        <span onclick="openNav()">7th Year</span>
+                    </button>
+                </div>
+            </div>
+        <!--    Bagian Footer   -->
+            <footer class="footerpage">
+                <i class="arrow left"></i>
+                    <img src="./assets/musiclogo_off.png" id="music">
+                <i class="arrow right"></i>
+                <audio id="xenonOST">
+                    <source src="./assets/xenonOST.mp3" type="audio/mp3">
+                </audio>
+            </footer>
+        </div>
+    </body>
+</html>

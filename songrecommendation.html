@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./assets/logo_icon.png" />
+        <script src="./index.js"></script>
+        <title>Xenon Webpage</title>
+    </head>
+    <body onload="myFunction()" class="bodyP1_3">
+        <!--    Bagian Loader   -->
+        <div id="loader"></div>
+        <div style="display:none;" id="displayloading" class="animasi_intro">
+        <!--    Bagian Navigasi   -->
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="./aboutpage.html" >About Me</a>
+                <a href="./futurepage.html">Future Plan</a>
+                <a href="#" class="active">Song Recommendations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        <!--    Bagian Konten   -->
+            <h1 id="judulP4">Song Recommendations</h1>
+            <p id="descriptionP4">Some songs I would like to recommend. Click the image for the music!</p>
+            <div class="page4">
+                <a href="https://www.youtube.com/watch?v=iJqjZU5iiS8" target="_blank">
+                    <img src="./assets/songrec01.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">Keane - On The Road</p><br>
+                <a href="https://www.youtube.com/watch?v=73V3xrfiYMo" target="_blank">
+                    <img src="./assets/songrec02.jpeg" class="songrec"><br>
+                </a>
+                <p id="songdesc">YOUNHA (윤하) - 사건의 지평선 (Event Horizon)</p><br>
+                <a href="https://www.youtube.com/watch?v=5C0EOUyA6lo" target="_blank">
+                    <img src="./assets/songrec03.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">Sejeong (세정) - SKYLINE</p><br>
+                <a href="https://www.youtube.com/watch?v=r_6q_-d-7Sk" target="_blank">
+                    <img src="./assets/songrec04.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">여자친구 GFRIEND - 시간을 달려서 (ROUGH)</p><br>
+                <a href="https://www.youtube.com/watch?v=k0Z6IxOeuMk" target="_blank">
+                    <img src="./assets/songrec05.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">The 1975 - I Always Wanna Die (Sometimes)</p><br>
+                <a href="https://www.youtube.com/watch?v=7k_d3bjpaeY" target="_blank">
+                    <img src="./assets/songrec06.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">澤野弘之/SawanoHiroyuki[nZk]:Uru - Binary Star</p><br>
+                <a href="https://www.youtube.com/watch?v=sCtwjc8qTE0" target="_blank">
+                    <img src="./assets/songrec07.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">Paramore - Pressure</p><br>
+                <a href="https://www.youtube.com/watch?v=RSNmgE6L8AU" target="_blank">
+                    <img src="./assets/songrec08.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">Keane - Everybody's Changing</p><br>
+                <a href="https://www.youtube.com/watch?v=izHyKdrSKvo" target="_blank">
+                    <img src="./assets/songrec09.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">Porter Robinson - Everything Goes On</p><br>
+                <a href="https://www.youtube.com/watch?v=HKVEJ4LhUAE" target="_blank">
+                    <img src="./assets/songrec10.jpg" class="songrec"><br>
+                </a>
+                <p id="songdesc">One Direction - Walking in the Wind</p><br>
+            </div>
+        <!--    Bagian Footer   -->
+            <footer class="footerpage">
+                <i class="arrow left"></i>
+                    <img src="./assets/musiclogo_off.png" id="music">
+                <i class="arrow right"></i>
+                <audio id="xenonOST">
+                    <source src="./assets/xenonOST.mp3" type="audio/mp3">
+                </audio>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./assets/logo_icon.png" />
+        <script src="./index.js"></script>
+        <title>Xenon Webpage</title>
+    </head>
+    <body onload="myFunction()" class="bodyP2_4">
+        <!--    Bagian Loader   -->
+        <div id="loader"></div>
+        <div style="display:none;" id="displayloading" class="animasi_intro">
+        <!--    Bagian Navigasi   -->
+            <div class="topnav" id="myTopnav">
+                <a href="./index.html">Home</a>
+                <a href="#" class="active">About Me</a>
+                <a href="./futurepage.html">Future Plan</a>
+                <a href="./songrecommendation.html">Song Recommendations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        <!--    Bagian Konten   -->
+            <h1 id="judulP2">Description</h1>
+            <div class="page2">
+                <div class="profile">
+                    <img src="./assets/xenon_profpic1.png" class="profpic" id="profpicID">
+                    <div class="changebtn">
+                        <button class="changebtntxt" onclick="document.getElementById('profpicID').src='./assets/xenon_profpic1.png'">1</button>
+                        <button class="changebtntxt" onclick="document.getElementById('profpicID').src='./assets/xenon_profpic2.png'">2</button>
+                        <button class="changebtntxt" onclick="document.getElementById('profpicID').src='./assets/xenon_profpic3.png'">3</button>
+                    </div>
+                </div>
+                <div>
+                    <p class="bio">
+                        <strong>Nama:</strong><br>
+                        Simon "Xenon" Jackson<br>
+                        <strong>Minat dan Bakat:</strong><br>
+                        Memiliki minat dalam dunia komputer atau <em>programming</em> serta berbakat dalam bermusik yang ditunjukkan dengan karya-karyanya.<br>
+                        <strong>Hobby:</strong><br>
+                        Bermusik.<br>
+                        <strong>Idola:</strong><br>
+                        <p class="bio">Ludwig van Beethoven. Beliau adalah seorang komponis musik klasik ternama yang berasal dari Jerman. Beethoven menjadi idola <span id="titik">...</span><span id="readMore"> saya karena di masa-masa akhir hidupnya dia menderita ketulian, walaupun demikian ia tetap dapat menghasilkan karya musik yang hebat dengan kekurangan dan penyakit yang dideritanya.</span></p>
+                        <button onclick="myFunction()" id="btnReadmore">Read more</button>
+                        <p class="bio"><br>
+                        <strong>Motivasi:</strong><br>
+                        When a door closes, a window opens.</p>
+                    </p>
+                </div>
+            </div>
+        <!--    Bagian Footer   -->
+            <footer class="footerpage">
+                <i class="arrow left"></i>
+                    <img src="./assets/musiclogo_off.png" id="music">
+                <i class="arrow right"></i>
+                <audio id="xenonOST">
+                    <source src="./assets/xenonOST.mp3" type="audio/mp3">
+                </audio>
+            </footer>
+        </div>
+    </body>
+</html>

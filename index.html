@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="./assets/logo_icon.png" />
+        <script src="./index.js"></script>
+        <title>Xenon Webpage</title>
+    </head>
+    <body onload="myFunction()" class="bodyP1_3">
+        <!--    Bagian Loader   -->
+        <div id="loader"></div>
+        <div style="display:none;" id="displayloading" class="animasi_intro">
+        <!--    Bagian Navigasi   -->
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Home</a>
+                <a href="./aboutpage.html">About Me</a>
+                <a href="./futurepage.html">Future Plan</a>
+                <a href="./songrecommendation.html">Song Recommendations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        <!--    Bagian Konten   -->
+            <div class="page1">
+                <h1 id="judulP1">Xenon</h1>
+                <p id="deskripsiP1"><strong>Simon Jackson</strong>, aka. <strong>Xenon</strong>, is a system security administrator who works at A.R.C.; he has access to lower levels of the system. A highly skilled programmer and also the leader and primary guitarist of the personal band <strong>"Xenon"</strong>.</p>
+                <img src="./assets/xenon_logo.png" id="xenonlogo">
+            </div>
+        <!--    Bagian Footer   -->
+            <footer class="footerpage">
+                <i class="arrow left"></i>
+                    <img src="./assets/musiclogo_off.png" id="music">
+                <i class="arrow right"></i>
+                <audio autoplay id="xenonOST">
+                    <source src="./assets/xenonOST.mp3" type="audio/mp3">
+                </audio>
+            </footer>
+        </div>
+    </body>
+</html>
